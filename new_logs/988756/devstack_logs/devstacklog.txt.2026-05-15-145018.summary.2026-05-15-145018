@@ -1,0 +1,4 @@
+2026-05-15 14:50:18.680 | stack.sh log /tmp/devstack_logs/devstacklog.txt.2026-05-15-145018
+2026-05-15 14:50:37.844 | Installing package prerequisites
+2026-05-15 14:53:28.503 | Starting RabbitMQ
+2026-05-15 14:54:16.501 | Installing OpenStack project source
