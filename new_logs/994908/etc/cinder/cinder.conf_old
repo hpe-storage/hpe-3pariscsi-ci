@@ -1,8 +1,8 @@
 
 [keystone_authtoken]
 memcached_servers = localhost:11211
-cafile = /opt/stack/data/ca-bundle.pem
 www_authenticate_uri = http://10.201.9.223/identity
+cafile = /opt/stack/data/ca-bundle.pem
 project_domain_name = Default
 project_name = service
 user_domain_name = Default
@@ -13,8 +13,8 @@ interface = public
 auth_type = password
 
 [DEFAULT]
-cinder_internal_tenant_user_id = 0b518d3822934aa2928a8f192ea77750
-cinder_internal_tenant_project_id = aacfb74222fd4a2eb8d82e629244a3da
+cinder_internal_tenant_user_id = f4d2b4d388894ccbb352ffc64f867350
+cinder_internal_tenant_project_id = e74af378bbc446ab93b3e26b06a6dee1
 graceful_shutdown_timeout = 5
 glance_api_servers = http://10.201.9.223/image
 log_color = True
@@ -65,8 +65,8 @@ volume_backend_name = lvmdriver-1
 
 [glance]
 memcached_servers = localhost:11211
-cafile = /opt/stack/data/ca-bundle.pem
 www_authenticate_uri = http://10.201.9.223/identity
+cafile = /opt/stack/data/ca-bundle.pem
 project_domain_name = Default
 project_name = service
 user_domain_name = Default
@@ -78,6 +78,7 @@ auth_type = password
 
 [nova]
 region_name = RegionOne
+cafile = /opt/stack/data/ca-bundle.pem
 project_domain_name = Default
 project_name = service
 user_domain_name = Default
@@ -94,6 +95,7 @@ backend_url = etcd3+http://10.201.9.223:2379?api_version=v3
 enforce_new_defaults = true
 
 [service_user]
+cafile = /opt/stack/data/ca-bundle.pem
 project_domain_name = Default
 project_name = service
 user_domain_name = Default
